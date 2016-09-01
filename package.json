@@ -1,0 +1,20 @@
+{
+  "name": "node-hapi-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^15.0.2",
+    "hapi-good-winston": "^1.1.0",
+    "hapi-server-session": "^2.0.4",
+    "hapi-swagger": "^7.1.0",
+    "inert": "^4.0.2",
+    "mrhorse": "^2.1.0",
+    "vision": "^4.1.0"
+  }
+}
