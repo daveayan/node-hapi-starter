@@ -9,10 +9,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "blipp": "^2.3.0",
     "hapi": "^15.0.2",
     "hapi-good-winston": "^1.1.0",
     "hapi-server-session": "^2.0.4",
     "hapi-swagger": "^7.1.0",
+    "hapijs-status-monitor": "^0.3.0",
     "inert": "^4.0.2",
     "mrhorse": "^2.1.0",
     "vision": "^4.1.0"
