@@ -4,6 +4,7 @@ let privateApi = {};
 
 privateApi.get_user = function(request, response) {
     request.session.views = request.session.views + 1 || 1;
+    console.log("Hello User ... " + request.params.id + ", Views = " + request.session.views + ", " + new Date().getMilliseconds());
     response("Hello User ... " + request.params.id + ", Views = " + request.session.views);
 }
 

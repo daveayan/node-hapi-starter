@@ -30,3 +30,11 @@
 - GET a user without a secret, will return a 403: http://localhost:3000/user/1
 - GET a user with a secret, will return a valid string: http://localhost:3000/user/1?secret=444
 - TIP: Try with a different userid: http://localhost:3000/user/4345343244533?secret=444
+
+## Load Tests
+- Using Artillery - https://artillery.io/
+- artillery run test/artillery.yml
+- artillery report artillery_report_**********.json
+
+## Notes
+- Status Plugin is good however it crashes when you run a load using artillery. Comment this out in server.js before running artillery

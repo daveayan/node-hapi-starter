@@ -1,1 +1,3 @@
 node_modules/
+artillery*.json
+artillery*.html
