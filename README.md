@@ -33,8 +33,20 @@
 
 ## Load Tests
 - Using Artillery - https://artillery.io/
+- npm install artillery -g (note, this is not a dependency in package.json)
 - artillery run test/artillery.yml
 - artillery report artillery_report_**********.json
+
+## Use PM2
+- Using http://pm2.keymetrics.io/
+- npm install pm2 -g (note, this is not a dependency in package.json)
+- pm2 start ./app/server/server.js -i 2 (Start in cluster mode with 2 servers)
+- pm2 scale server 5 (Scale the cluster up to 5 servers)
+- pm2 logs (view consolidated logs)
+- pm2 monit (monitor all servers)
+- pm2 stop all (Stop all servers)
+- pm2 delete all (Deletes all servers)
+- pm2 flush (Removes all logs)
 
 ## Notes
 - Status Plugin is good however it crashes when you run a load using artillery. Comment this out in server.js before running artillery

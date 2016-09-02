@@ -29,7 +29,7 @@ server.register(hapi_mrhorse_config);
 server.register(hapi_swagger_config);
 server.register(hapi_server_session_config);
 server.register(hapi_blipp_config);
-server.register(hapi_status_monitor_config);
+// server.register(hapi_status_monitor_config);
 
 // Start the server
 server.start((err) => {
